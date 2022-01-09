@@ -1,0 +1,126 @@
+{% load static %}
+<html>
+    <head>
+        <title>ñliz canan alheraki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta charset="utf-8">
+        <link rel="icon" href="{% static 'images/2.png' %}">
+        {% include "css.html" %}
+    </head>
+    <body>
+        <div class="container">
+        
+        <button id="scrollUp">
+        <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+        <div class="head-nav">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="container">
+                      <a class="navbar-brand" href="/"><img src="{% static 'images/1.jpeg' %}" width="325px"height="100px"></a>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item li">
+                       <a><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                          </li>
+                        </ul>
+                </div>
+            </nav>        
+        </div>
+        <hr>
+             <div class="head-nav ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="container">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollabse" aria-controls="navCollabse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navCollabse">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item ">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'main:galerie' %}">Galerie</a>
+							</li><li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:about' %}">über mich</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:contact' %}">Kontakt</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:impressum' %}">Impressum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>        
+        </div>
+<hr>
+            <div class="courses" id="course">
+                <div class="container">
+                    <h2 class="text-center">Blindergalerie</h2>
+                    <p class="lead text-center">Hallo </p>
+                    <div class="main-course">
+                        <div class="row">
+                            {% for i in galerie %}
+                                <div class="col-md-4">
+                                    <a href=""> <img src="{{ i.image.url }}"></a>
+                                   
+                                </div>
+                                {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <hr>
+                <!--Start Sign In-->
+            <div class="signin" id="sign">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>ABONNIEREN SIE UNSEREN NEWSLETTER NEWSLETTER</h4>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <a href="#"><button>NEWSLETTER</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End Sign In-->
+        <hr>
+       
+        <!--Start Footer-->
+            <div class="footer" >
+                <div class="container">
+                    <div class="row">
+                         <div class ="col-md-4">
+                            <h2>KONTAKT</h2>
+                             <p class="lead">Anfahrt Öffnungszeiten Mo- 900-00 Hier finden Sie uns: Alexanderstrale 5, 10178 Berlin, Deutschland Sa- So Geschlossen E-Mail mailgexample.com Rufen Sie uns an 0229 55 99 s55</p>
+                        <a><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class ="col-md-4">
+                            <h1>ANFAHRT</h1>
+                          <div class="mapouter"><div class="gmap_canvas"><iframe width="333" height="197" id="gmap_canvas" src="https://www.google.com/maps/embed?" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:197px;width:333px;}</style><a href="https://www.embedgooglemap.net">embedding maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:197px;width:333px;}</style></div></div>
+                        </div>
+                      
+                     <div class ="col-md-4">
+                            <h2>Öffnungszeiten</h2>
+                            <ul>
+                                <li><a href="/"><i class="fas fa-chevron-right"></i> MO - FR</a></li>
+                                <li><a href="#about"><i class="fas fa-chevron-right"></i> SA-SO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End  Footer-->
+           </div>
+        {% include "js.html" %}
+           
+    </body>
+</html>

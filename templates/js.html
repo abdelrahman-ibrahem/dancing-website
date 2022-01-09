@@ -1,0 +1,17 @@
+
+{% load static %}
+<!--Start Adding Script Files-->
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.j' %}s"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript">
+const scrollUp = document.getElementById("scrollUp");
+scrollUp.addEventListener("click", function(){
+window.scrollTo({
+  top:0,
+  left:0,
+  bahavior:"smooth"
+});
+});
+</script>

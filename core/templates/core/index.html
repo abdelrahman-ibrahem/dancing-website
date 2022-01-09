@@ -1,0 +1,154 @@
+{% load static %}
+<html>
+    <head>
+        <title>ñliz canan alheraki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+        <meta charset="utf-8" >
+        <link rel="icon" href="{% static 'images/2.png' %}">
+        {% include "css.html" %}
+    </head>
+    <body>
+        <div class="container">
+        
+        <button id="scrollUp">
+        <i class="fas fa-arrow-up"></i>
+        </button>
+                
+        <div class="head-nav">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="container">
+                      <a class="navbar-brand" href="/"><img src="{% static 'images/1.jpeg' %}" width="325px"height="100px"></a>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item li">
+                                 <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                          </li>
+                        </ul>
+                </div>
+            </nav>        
+        </div>
+        <hr>
+             <div class="head-nav ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="container">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollabse" aria-controls="navCollabse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navCollabse">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active ">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:galerie' %}">Galerie</a>
+							</li><li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:about' %}">über mich</a>
+                          </li><li class="nav-item ">
+                            <a class="nav-link" href="{% url 'main:contact' %}">Kontakt</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link" href="{% url 'main:impressum' %}">Impressum</a>
+							
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>        
+        </div>
+<hr>
+        <h1> Herzlich Willkommen auf <br>meiner Website </h1>
+            <hr>
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                   <img src="{% static 'images/2.png' %}" width="100%">
+                    </div>
+                    <div class="col-md-6">
+                         <h2>Achtsamer Umgang mit Vielfalt: „Interkulturelle“ & diversitätsbewusste Bildung</h2>
+                        <p class="lead">
+                           
+                       KURZVORTRÄGE – WORKSHOPS – SEMINARE 
+Achtsamer Umgang mit Vielfalt setzt für mich voraus, dass wir unsere eigene Lebenswelt und eigenen Prägungen hinterfragen. Je besser wir uns selbst verstehen, desto offener und sensibler können wir anderen individuellen Lebenswelten begegnen. Debatten und Gespräche über Themen wie Diskriminierung & Rassismus, Flucht & Migration oder auch Zugehörigkeit & (kulturelle) Identität werden mit einem hohen Maß an Emotionalität geführt. Daher bin ich davon überzeugt, dass Achtsamkeit eine wichtige Rolle bei der Entwicklung von Diversitätsbewusstsein spielt.
+Alle Angebote eignen sich für Jugendgruppen genauso wie für Erwachse. Ich passe Inhalte und Themenschwerpunkte gerne an die jeweilige Zielgruppe an. 
+                        </p>
+                        <a href="{% url 'main:contact' %}">Jetzt Anfragen</a>               
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+            <hr>
+              <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                   <img src="{% static 'images/3.png' %}" width="100%">
+                    </div>
+                    <div class="col-md-6">
+                         <h2> tanzeinfach: Tanz & Empowerment</h2>
+                        <p class="lead">
+                 WORKSHOPS – JUNGGESELLINNENABSCHIEDE – HENNA NÄCHTE 
+tanzeinfach sind Tanzpartys und Workshops für Frauen* im Safe-Space (= geschützter Ort, ohne Kameras und ohne Zuschauer). Ganz unter euch lernt ihr Ansätze aus dem Freestyle, dem Social Dance und von Body Empowerment kennen. Spätestens am Ende des Workshops sollte der Satz „Ich kann nicht tanzen“ der Vergangenheit angehören. Hier könnt ihr euch so richtig auslassen & zelebrieren!
+Vorkenntnisse sind nicht nötig!
+Ich stimme die Inhalte ganz individuell für euch ab. Ich freue mich auf eure Anfrage!
+                        </p>
+                    <a href="{% url 'main:contact' %}">Jetzt Anfragen</a>              
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+            <hr>
+        <!--Start Sign In-->
+            <div class="signin" id="sign">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>ABONNIEREN SIE UNSEREN NEWSLETTER NEWSLETTER</h4>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <a href="#"><button>NEWSLETTER</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End Sign In-->
+        <hr>
+       
+        <!--Start Footer-->
+            <div class="footer" >
+                <div class="container">
+                    <div class="row">
+                         <div class ="col-md-4">
+                            <h2>KONTAKT</h2>
+                             <p class="lead">Hannoverche str , 30627 Hannover . 015752173005</p>
+                           <a><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class ="col-md-4">
+                            <h1>ANFAHRT</h1>
+                          <div class="mapouter"><div class="gmap_canvas"><iframe width="333" height="197" id="gmap_canvas" src="https://www.google.com/maps/embed?" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:197px;width:333px;}</style><a href="https://www.embedgooglemap.net">embedding maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:197px;width:333px;}</style></div></div>
+                        </div>
+                      
+                     <div class ="col-md-4">
+                            <h2>Öffnungszeiten</h2>
+                            <ul>
+                                <li><a href="/"><i class="fas fa-chevron-right"></i> MO - FR</a></li>
+                                <li><a href="#about"><i class="fas fa-chevron-right"></i> SA-SO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End  Footer-->
+         </div>
+        <!--Start Adding Script Files-->
+       {% include "js.html" %}
+    </body>
+</html>

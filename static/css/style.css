@@ -1,0 +1,178 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    
+}
+#scrollUp{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  border:none;
+  background-color: #D56D50;
+  color:#FFF;
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  font-size: 20px;
+  z-index: 2;
+  outline: none;
+}
+#scroolUp:active{
+  background-color:#e38b02;
+
+}
+.navbar-dark.bg-primary{
+    background-color:white !important;
+}
+hr{
+   background-color: #D56D50;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: black;
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link{
+    color:#D56D50;
+    border: 2px solid #D56D50;
+    padding: 10px
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:#D56D50;
+    font-size: 20px;
+    font-weight: bold
+}
+.navbar-dark .navbar-toggler{
+    background-color: #D56D50;
+    color: aliceblue
+}
+.navbar-expand-lg .navbar-collapse{
+    margin: 0 auto;
+    flex-grow: 0;
+    
+}
+h1{
+       margin-bottom: 30px;
+text-align: center;
+    color: #D56D50;
+}
+/*Start About Us Section*/
+.about{
+    padding:70px 0;background-color: #fff
+}
+.about h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color:#D56D50
+}
+.about p{
+    font-size: 15px
+}
+.about  a{
+    background: transparent;
+    border:2px solid  #D56D50;
+    padding:5px 20px;
+    border-radius:5px;
+    color: #D56D50;
+    transition:all 0.5s ease-in-out;
+    text-decoration: none;
+    width: 100%;
+}
+
+.about a:hover{
+    background-color:#D56D50;
+    color: #fff;
+}
+.about h3{ color: #D56D50; }
+/*End About Us Section*/
+/*Start Sign In*/
+.signin button{
+    background-color: #D56D50;
+    padding:5px 30px;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border:2px solid #fff;
+    float: right;
+    
+}
+.signin button:hover{
+    background-color: #D56D50;border:2px solid  #D56D50;
+}
+.signin h4{font-weight: bold;display: inline}
+/*End Sign In*/
+/*Start Courses*/
+.courses {
+    padding: 70px 0
+}
+.courses h2{font-weight: bold;color: #D56D50;font-size: 35px;text-transform: uppercase}
+.courses .main-course img{width: 100%;transition: all 1s ease;padding-top: 25PX}
+.courses .main-course img:hover{transform: scale(1.1)}
+/*End Courses*/
+/*Start Footer*/
+.footer{
+    padding: 70px 0;
+        background-color: #f3f5fa;
+
+}
+.footer h1,.footer h2{
+    font-weight: bold;color: #090a0a;
+}
+.footer ul{
+    list-style: none;padding: 0
+}
+.footer ul li a{
+    color: #000 !important;
+    text-decoration: none
+}
+.footer ul li {margin-bottom: 15px}
+.footer i,.li{font-size: 25px;color:#D56D50;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer}
+.footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.footer i:hover,.fab:hover{color:#000}
+/*End Footer*/
+
+input[type="submit"]:hover{
+     background-color: #D56D50; color:#fff;
+}
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+input[type="submit"]{
+    background-color: #fff;
+    padding:5px 30px;
+    color:#D56D50;
+    transition: all 0.5s ease;
+    border:2px solid #D56D50;
+    float: right;
+    font-weight: bold;
+    width: 30%;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*Start Media query*/
+@media (max-width:767px){
+    .signin a{display: inline-block}
+    .courses .main-course img{margin-bottom: 20px}
+}
+/*End Media query*/
+.nav-item i{
+    font-size: 25px;color:#D56D50;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer
+}
